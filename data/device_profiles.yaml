@@ -1,0 +1,76 @@
+# 设备配置文件
+
+# 基础款扫地机器人
+basic_model:
+  id: "SV001"
+  name: "智能扫地机基础版"
+  capabilities:
+    - "sweep"
+    - "auto_recharge"
+  sensors:
+    - "bumper"
+    - "cliff"
+    - "wall"
+  battery_capacity: 2600  # mAh
+  run_time: 90  # 分钟
+  charging_time: 240  # 分钟
+  dust_bin_capacity: 400  # ml
+  cleaning_modes:
+    - "standard"
+    - "eco"
+
+# 中端扫地机器人
+mid_range_model:
+  id: "SV002"
+  name: "智能扫地机中端版"
+  capabilities:
+    - "sweep"
+    - "mop"
+    - "auto_recharge"
+    - "scheduled_cleaning"
+  sensors:
+    - "bumper"
+    - "cliff"
+    - "wall"
+    - "optical_flow"
+  battery_capacity: 3200  # mAh
+  run_time: 120  # 分钟
+  charging_time: 180  # 分钟
+  dust_bin_capacity: 500  # ml
+  water_tank_capacity: 200  # ml
+  cleaning_modes:
+    - "standard"
+    - "strong"
+    - "eco"
+
+# 高端扫地机器人
+premium_model:
+  id: "SV003"
+  name: "智能扫地机旗舰版"
+  capabilities:
+    - "sweep"
+    - "mop"
+    - "auto_recharge"
+    - "scheduled_cleaning"
+    - "zone_cleaning"
+    - "voice_control"
+    - "app_control"
+  sensors:
+    - "bumper"
+    - "cliff"
+    - "wall"
+    - "optical_flow"
+    - "lidar"
+    - "camera"
+  battery_capacity: 5200  # mAh
+  run_time: 180  # 分钟
+  charging_time: 240  # 分钟
+  dust_bin_capacity: 600  # ml
+  water_tank_capacity: 300  # ml
+  suction_power: 4000  # Pa
+  cleaning_modes:
+    - "standard"
+    - "strong"
+    - "eco"
+    - "quiet"
+    - "max" 

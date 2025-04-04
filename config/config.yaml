@@ -1,0 +1,29 @@
+# 扫地机器人测试框架全局配置
+
+# 日志配置
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/test.log"
+  
+# 测试报告配置
+reporting:
+  output_dir: "reports"
+  report_format: "html"
+  screenshots_dir: "reports/screenshots"
+  
+# 超时配置（秒）
+timeouts:
+  default: 10
+  page_load: 30
+  command_execution: 5
+  
+# 重试配置
+retry:
+  max_attempts: 3
+  delay: 2
+  
+# 设备配置
+device:
+  default_id: "SV001"
+  simulator_port: 8080 

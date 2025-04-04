@@ -1,0 +1,20 @@
+2025-04-04 13:43:17,114 - root - INFO - 日志系统已配置，级别: INFO, 文件: logs/test.log
+2025-04-04 13:43:17,114 - root - INFO - ============================================================
+2025-04-04 13:43:17,114 - root - INFO - 开始扫地机器人测试
+2025-04-04 13:43:17,114 - root - INFO - 项目路径: /Users/yuanquan/code_project/vacuum_test_project
+2025-04-04 13:43:17,114 - root - INFO - Python版本: 3.12.9 (main, Feb  4 2025, 14:38:38) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-04-04 13:43:17,114 - root - INFO - ============================================================
+2025-04-04 13:43:18,406 - root - INFO - ============================================================
+2025-04-04 13:43:18,407 - root - INFO - 开始执行测试: test_power_on
+2025-04-04 13:43:18,407 - root - INFO - 文件路径: /Users/yuanquan/code_project/vacuum_test_project/tests/api/test_basic_functions.py
+2025-04-04 13:43:18,407 - root - INFO - ============================================================
+2025-04-04 13:43:18,413 - libs.api_client - INFO - API客户端初始化，基础URL: http://localhost:8080/api/v1
+2025-04-04 13:43:18,413 - test_basic_functions - INFO - 创建API客户端: http://localhost:8080/api/v1
+2025-04-04 13:43:18,424 - test_basic_functions - INFO - 加载测试数据
+2025-04-04 13:43:18,425 - test_basic_functions - INFO - 测试开机功能
+2025-04-04 13:43:18,448 - libs.api_client - ERROR - POST请求异常: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /api/v1/device/power (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10634ac30>: Failed to establish a new connection: [Errno 61] Connection refused')), URL: http://localhost:8080/api/v1/device/power
+2025-04-04 13:43:18,682 - root - ERROR - 测试失败: test_power_on
+2025-04-04 13:43:18,682 - root - ERROR - 错误信息: <ExceptionInfo ConnectionError(MaxRetryError("HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /api/v1...ection.HTTPConnection object at 0x10634ac30>: Failed to establish a new connection: [Errno 61] Connection refused'))")) tblen=21>
+2025-04-04 13:43:18,683 - root - INFO - ============================================================
+2025-04-04 13:43:18,683 - root - INFO - 测试执行完成: test_power_on
+2025-04-04 13:43:18,683 - root - INFO - ============================================================

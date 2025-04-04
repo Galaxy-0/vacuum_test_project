@@ -1,0 +1,140 @@
+{
+  "map_id": "home_map_001",
+  "map_name": "My Home",
+  "width": 10.0,
+  "height": 8.0,
+  "resolution": 0.05,
+  "rooms": [
+    {
+      "id": "living_room",
+      "name": "客厅",
+      "type": "living_room",
+      "area": 24.5,
+      "boundaries": [
+        {"x": 1.0, "y": 1.0},
+        {"x": 6.0, "y": 1.0},
+        {"x": 6.0, "y": 5.0},
+        {"x": 1.0, "y": 5.0}
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "厨房",
+      "type": "kitchen",
+      "area": 12.25,
+      "boundaries": [
+        {"x": 6.0, "y": 1.0},
+        {"x": 9.0, "y": 1.0},
+        {"x": 9.0, "y": 4.5},
+        {"x": 6.0, "y": 4.5}
+      ]
+    },
+    {
+      "id": "bedroom",
+      "name": "卧室",
+      "type": "bedroom",
+      "area": 20.0,
+      "boundaries": [
+        {"x": 1.0, "y": 5.0},
+        {"x": 6.0, "y": 5.0},
+        {"x": 6.0, "y": 8.0},
+        {"x": 1.0, "y": 8.0}
+      ]
+    },
+    {
+      "id": "bathroom",
+      "name": "浴室",
+      "type": "bathroom",
+      "area": 9.0,
+      "boundaries": [
+        {"x": 6.0, "y": 5.0},
+        {"x": 9.0, "y": 5.0},
+        {"x": 9.0, "y": 8.0},
+        {"x": 6.0, "y": 8.0}
+      ]
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "sofa",
+      "type": "furniture",
+      "room_id": "living_room",
+      "boundaries": [
+        {"x": 2.0, "y": 2.0},
+        {"x": 5.0, "y": 2.0},
+        {"x": 5.0, "y": 3.5},
+        {"x": 2.0, "y": 3.5}
+      ]
+    },
+    {
+      "id": "coffee_table",
+      "type": "furniture",
+      "room_id": "living_room",
+      "boundaries": [
+        {"x": 3.0, "y": 3.8},
+        {"x": 4.0, "y": 3.8},
+        {"x": 4.0, "y": 4.5},
+        {"x": 3.0, "y": 4.5}
+      ]
+    },
+    {
+      "id": "dining_table",
+      "type": "furniture",
+      "room_id": "kitchen",
+      "boundaries": [
+        {"x": 7.0, "y": 2.0},
+        {"x": 8.5, "y": 2.0},
+        {"x": 8.5, "y": 3.5},
+        {"x": 7.0, "y": 3.5}
+      ]
+    },
+    {
+      "id": "bed",
+      "type": "furniture",
+      "room_id": "bedroom",
+      "boundaries": [
+        {"x": 2.0, "y": 6.0},
+        {"x": 5.0, "y": 6.0},
+        {"x": 5.0, "y": 7.5},
+        {"x": 2.0, "y": 7.5}
+      ]
+    },
+    {
+      "id": "bathtub",
+      "type": "furniture",
+      "room_id": "bathroom",
+      "boundaries": [
+        {"x": 6.5, "y": 6.0},
+        {"x": 8.5, "y": 6.0},
+        {"x": 8.5, "y": 7.5},
+        {"x": 6.5, "y": 7.5}
+      ]
+    }
+  ],
+  "virtual_walls": [
+    {
+      "id": "room_divider_1",
+      "start": {"x": 6.0, "y": 3.0},
+      "end": {"x": 6.0, "y": 4.0}
+    }
+  ],
+  "no_go_zones": [
+    {
+      "id": "carpet_zone",
+      "boundaries": [
+        {"x": 4.0, "y": 4.0},
+        {"x": 5.5, "y": 4.0},
+        {"x": 5.5, "y": 4.8},
+        {"x": 4.0, "y": 4.8}
+      ]
+    }
+  ],
+  "charging_dock": {
+    "position": {"x": 1.5, "y": 1.5},
+    "orientation": 45.0
+  },
+  "explored_area": 65.75,
+  "creation_time": "2024-04-02T14:30:00Z",
+  "last_modified": "2024-04-02T16:45:20Z",
+  "version": "1.0"
+} 

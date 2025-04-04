@@ -1,0 +1,90 @@
+# API测试数据
+
+# 电源控制测试数据
+power_test:
+  power_on:
+    request:
+      state: "on"
+    expected:
+      status_code: 200
+      result: "success"
+  power_off:
+    request:
+      state: "off"
+    expected:
+      status_code: 200
+      result: "success"
+  invalid_state:
+    request:
+      state: "invalid"
+    expected:
+      status_code: 400
+      result: "error"
+
+# 清扫模式测试数据
+mode_test:
+  valid_modes:
+    - mode: "standard"
+      expected:
+        status_code: 200
+        result: "success"
+    - mode: "strong"
+      expected:
+        status_code: 200
+        result: "success"
+    - mode: "eco"
+      expected:
+        status_code: 200
+        result: "success"
+  invalid_mode:
+    mode: "turbo"
+    expected:
+      status_code: 400
+      result: "error"
+
+# 清扫控制测试数据
+cleaning_test:
+  start:
+    request:
+      action: "start"
+    expected:
+      status_code: 200
+      result: "success"
+      working: true
+  stop:
+    request:
+      action: "stop"
+    expected:
+      status_code: 200
+      result: "success"
+      working: false
+  pause:
+    request:
+      action: "pause"
+    expected:
+      status_code: 200
+      result: "success"
+      working: false
+
+# 故障场景测试数据
+error_scenarios:
+  dust_bin_full:
+    setup:
+      dust_bin: 100
+    request:
+      action: "start"
+    expected:
+      status_code: 400
+      result: "error"
+      error_code: 1
+      message: "尘盒已满"
+  low_battery:
+    setup:
+      battery: 5
+    request:
+      action: "start"
+    expected:
+      status_code: 400
+      result: "error"
+      error_code: 2
+      message: "电池电量低" 

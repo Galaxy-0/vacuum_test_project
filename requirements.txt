@@ -1,0 +1,14 @@
+# 测试框架
+pytest==7.4.0
+pytest-cov==4.1.0
+pytest-mock==3.11.1
+
+# 网络与协议相关
+paho-mqtt==1.6.1
+requests==2.31.0
+
+# 数据处理
+pyyaml==6.0.1
+
+# 开发工具
+black==23.7.0
